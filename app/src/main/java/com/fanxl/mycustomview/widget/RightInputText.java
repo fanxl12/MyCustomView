@@ -3,6 +3,7 @@ package com.fanxl.mycustomview.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.os.Build;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -86,7 +87,11 @@ public class RightInputText extends LinearLayout {
 		addView(leftTv, leftParams);
 
 		EditText input = new EditText(context);
-		input.setBackground(null);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+			input.setBackground(null);
+		}else {
+			input.setBackgroundResource(0);
+		}
 		if (!TextUtils.isEmpty(inputTips)){
 			input.setHint(inputTips);
 		}

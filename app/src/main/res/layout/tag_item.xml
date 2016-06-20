@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="125dp"
+                android:layout_height="44dp"
+                android:background="#FFFFFF" >
+
+    <CheckBox android:id="@+id/tag_item_cb"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_centerInParent="true"
+              android:button="@null"
+              android:clickable="true"
+              android:drawableRight="@drawable/selector_scroll_tag_radio"
+              android:gravity="center"
+              android:drawablePadding="4dp"
+              android:text="123"
+              android:textAlignment="center"
+              android:textColor="@color/cb_text_color"
+              android:textSize="16sp">
+
+    </CheckBox>
+
+
+</RelativeLayout>
